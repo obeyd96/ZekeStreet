@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-u8$dohs$(wo&jqwwq-0_e_jyo37@jl@^_5=6t_(__=3kwv1!4p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+STRIPE_SECRET_KEY = 'sk_test_51MKNUUSGeWSLi2n85LP98uaG02Sd5NBZCjsE0l4uCRSohkaKMLnIluBTPrI1XGIpc7PO65dRTfh0nvTCPwBSJUBX004FJ5Q4lZ'
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
     'products',
+    'order',
 ]
 
 ALLOWED_HOSTS = ["*"]
@@ -75,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'zekestreet.wsgi.application'
+WSGI_APPLICATION = 'zekestreet.wsgi.application'
 
 
 # Database
